@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>แจ้งความสนใจ</title>
+        <style>
+            body{
+                font-family: 'Times New Roman', Times, serif;
+                background-color: blanchedalmond;
+            }
+            h1{
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                background-color: blanchedalmond;
+            }
+            h5{
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            form{
+                background-color: white;
+                width: 60%;
+                margin: auto;
+                padding: 20px;
+                border-radius: 10px;
+            }
+            input[type=text],input[type=tel],input[type=email],input[type=number], textarea, select{
+                width: 80%;
+                padding: 8px;
+                margin-top: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>แบบฟอร์มแจ้งความสนใจรับเลี้ยง</h1>
+
+        <form onsubmit="return form()">
+            <h3>1.ข้อมูลส่วนตัว</h3>
+            ชื่อผู้ติดต่อ:
+            <input id="name_lastname" name="name_lastname" size="40" placeholder="ชื่อ - นามสกุล"><br><br>
+            เบอร์โทร:
+            <input id="phone" type="tel" name="phone" placeholder="เบอร์โทร"><br><br>
+            Email:
+            <input type="email" name="emal" placeholder="อีเมล"><br><br>
+
+            <h3>2.สิ่งแวดล้อมในการเลี้ยงดู</h3>
+            ที่อยู่:
+            <textarea rows="2" cols="30"></textarea><br><br>
+            ลักษณะที่พักอาศัย<br>
+            <select>
+                <option>บ้านสวน</option>
+                <option>บ้านเดี่ยว</option>
+                <option>บ้านทาวน์โฮม</option>
+                <option>คอนโดมิเนียม/หอพัก</option>
+            </select>
+            <br><br>
+            ลักษณะการเลี้ยงสุนัข<br>
+            <input type="radio" name="place"> เลี้ยงภายในบ้าน
+            <br>
+            <input type="radio" name="place"> เลี้ยงภายนอกบ้าน
+            <br><br>
+            จำนวนสัตว์เลี้ยงที่มีอยู่ในปัจจุบัน<br>
+            <input id="pets" type="number" min="0">
+            <br><br>
+            <input id="check" type="checkbox"> การส่งแบบฟอร์มนี้เป็นการแจ้งความสนใจ โดยไม่รับรองว่าจะได้รับอุปการะสุนัข
+            <br><br>
+            <button type="submit">ส่งแบบฟอร์ม</button><br><br>
+            <div id="submit"></div>
+        </form>
+        <br><br><br>
+        <h5>6833268321 Sirawit Danaimongkol</h5>
+        
+        <script src="adoptme.js"></script>
+    </body>
+</html>
